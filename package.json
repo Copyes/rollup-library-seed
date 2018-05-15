@@ -1,0 +1,23 @@
+{
+  "name": "rollup-library-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Copyes/rollup-library-seed.git"
+  },
+  "keywords": [
+    "rollup",
+    "library"
+  ],
+  "author": "Charming",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Copyes/rollup-library-seed/issues"
+  },
+  "homepage": "https://github.com/Copyes/rollup-library-seed#readme"
+}
