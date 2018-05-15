@@ -1,11 +1,11 @@
-const alias = require('rollup-plugin-alias')
-const resolve = require('rollup-plugin-node-resolve')
-const commonjs = require('rollup-plugin-commonjs')
-const babel = require('rollup-plugin-babel')
-const replace = require('rollup-plugin-replace')
-const eslint = require('rollup-plugin-eslint')
+import alias from 'rollup-plugin-alias'
+import resolve from 'rollup-plugin-node-resolve'
+import commonjs from 'rollup-plugin-commonjs'
+import babel from 'rollup-plugin-babel'
+import replace from 'rollup-plugin-replace'
+import eslint from 'rollup-plugin-eslint'
 
-module.exports = {
+export default {
   input: 'src/main.js',
   plugins: [
     alias({
