@@ -5,11 +5,10 @@
   "main": "dist/index.cjs.js",
   "scripts": {
     "clean": "rimraf dist",
+    "lint": "eslint src/**/*.js",
     "serve": "serve -p 9090",
-    "dev":
-      "yarn run clean && cross-env NODE_ENV=development rollup -w -c ./builds/rollup.config.dev.js",
-    "build":
-      "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
+    "dev": "yarn run clean && cross-env NODE_ENV=development rollup -w -c ./builds/rollup.config.dev.js",
+    "build": "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
