@@ -2,21 +2,35 @@
   "name": "rollup-library-seed",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
   "scripts": {
     "clean": "rimraf dist",
     "serve": "serve -p 9090",
-    "dev":
-      "yarn run clean && cross-env NODE_ENV=development rollup -w -c builds/rollup.config.dev.js",
-    "build":
-      "yarn run clean && cross-env NODE_ENV=production rollup -c builds/rollup.config.prod.js",
+    "dev": "yarn run clean && cross-env NODE_ENV=development rollup -w -c ./builds/rollup.config.dev.js",
+    "build": "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Copyes/rollup-library-seed.git"
   },
-  "keywords": ["rollup", "library"],
+  "keywords": [
+    "rollup",
+    "library"
+  ],
   "author": "Charming",
   "license": "MIT",
   "bugs": {
@@ -30,7 +44,14 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.1.5",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.11.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.0",
+    "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
+    "rollup": "^0.59.0",
     "rollup-plugin-alias": "^1.4.0",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-commonjs": "^9.1.3",

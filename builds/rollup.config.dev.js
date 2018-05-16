@@ -1,9 +1,9 @@
-import baseConfig from './rollup.config.base.js'
 import serve from 'rollup-plugin-serve'
+import baseConfig from './rollup.config.base'
 import { name } from '../package.json'
 
 export default {
-  ...baseConfig,
+  input: baseConfig.input,
   output: [
     {
       file: `dist/${name}.js`,
