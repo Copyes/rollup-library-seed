@@ -32,8 +32,16 @@ npm run dev || yarn run dev
 npm run build || yarn run build
 ```
 
+**test**
+
+```js
+npm run test
+```
+
 ### Thanks
 
 [手牵手使用 Husky & Nodejs 自定义你的 Git 钩子](https://github.com/PaicFE/blog/issues/10)
 
 [用工具思路来规范化 git commit message](https://github.com/pigcan/blog/issues/15)
+
+[jest 单元测试](https://facebook.github.io/jest/zh-Hans/)

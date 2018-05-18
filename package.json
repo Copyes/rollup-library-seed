@@ -12,7 +12,7 @@
       "yarn run clean && cross-env NODE_ENV=development rollup -w -c ./builds/rollup.config.dev.js",
     "build":
       "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "husky": {
     "hooks": {
@@ -32,7 +32,7 @@
     "type": "git",
     "url": "git+https://github.com/Copyes/rollup-library-seed.git"
   },
-  "keywords": ["rollup", "library"],
+  "keywords": ["rollup", "library", "starter", "babel"],
   "author": "Charming",
   "license": "MIT",
   "bugs": {
@@ -56,6 +56,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
     "husky": "^1.0.0-rc.6",
+    "jest": "^22.4.3",
     "lint-staged": "^7.1.0",
     "prettier": "^1.12.1",
     "rimraf": "^2.6.2",
