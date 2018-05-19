@@ -8,7 +8,8 @@ A real comfortable toolkit for building library. This toolkit is based on rollup
 * [x] 2、Formatting the code style.
 * [x] 3、Formatting submission information.
 * [x] 4、Generating multiple specification files.
-* [ ] 5、Running test and Testing your code.
+* [x] 5、Running test and Testing your code.
+* [x] 6、Generating three versions respectively js.
 
 ### Usage
 
@@ -37,6 +38,10 @@ npm run build || yarn run build
 ```js
 npm run test
 ```
+
+**dist**
+
+The main, module and unpkg configured in package.json point to CJS, ESM, UMD three versions respectively.
 
 ### Thanks
 

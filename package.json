@@ -2,7 +2,9 @@
   "name": "rollup-library-seed",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.cjs.js",
+  "main": "dist/rollup-library-seed.cjs.js",
+  "module": "dist/rollup-library-seed.esm.js",
+  "unpkg": "dist/rollup-library-seed.min.js",
   "scripts": {
     "cz": "git-cz",
     "clean": "rimraf dist",
