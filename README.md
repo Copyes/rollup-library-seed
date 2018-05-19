@@ -1,3 +1,5 @@
+##Rollup-Library-Seed [![Build Status](https://travis-ci.com/Copyes/rollup-library-seed.svg?branch=master)](https://travis-ci.com/Copyes/rollup-library-seed)
+
 ### Introduction
 
 A real comfortable toolkit for building library. This toolkit is based on rollup, because it will generate a tiny file.
