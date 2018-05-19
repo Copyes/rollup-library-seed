@@ -1,4 +1,4 @@
-##Rollup-Library-Seed [![Build Status](https://travis-ci.com/Copyes/rollup-library-seed.svg?branch=master)](https://travis-ci.com/Copyes/rollup-library-seed)
+## Rollup-Library-Seed [![Build Status](https://travis-ci.com/Copyes/rollup-library-seed.svg?branch=master)](https://travis-ci.com/Copyes/rollup-library-seed)
 
 ### Introduction
 
