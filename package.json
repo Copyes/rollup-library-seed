@@ -10,11 +10,10 @@
     "clean": "rimraf dist",
     "lint": "eslint src/**/*.js --fix",
     "serve": "serve -p 9090",
-    "dev":
-      "yarn run clean && cross-env NODE_ENV=development rollup -w -c ./builds/rollup.config.dev.js",
-    "build":
-      "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
-    "test": "jest --coverage"
+    "dev": "yarn run clean && cross-env NODE_ENV=development rollup -w -c ./builds/rollup.config.dev.js",
+    "build": "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
+    "test": "npm run flow && jest --coverage",
+    "flow": "flow check"
   },
   "husky": {
     "hooks": {
@@ -23,7 +22,11 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": ["prettier --write", "eslint --fix", "git add"]
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
@@ -34,7 +37,12 @@
     "type": "git",
     "url": "git+https://github.com/Copyes/rollup-library-seed.git"
   },
-  "keywords": ["rollup", "library", "starter", "babel"],
+  "keywords": [
+    "rollup",
+    "library",
+    "starter",
+    "babel"
+  ],
   "author": "Charming",
   "license": "MIT",
   "bugs": {
@@ -48,6 +56,7 @@
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-2": "^6.24.1",
     "commitizen": "^2.9.6",
     "commitlint-config-cz": "^0.8.0",
@@ -57,6 +66,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
+    "flow-bin": "^0.72.0",
     "husky": "^1.0.0-rc.6",
     "jest": "^22.4.3",
     "lint-staged": "^7.1.0",
