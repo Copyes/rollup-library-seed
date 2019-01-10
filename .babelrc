@@ -1,9 +1,26 @@
 {
-  "presets": [["env", { "modules": false }], "stage-2" ,"flow"],
-  "plugins": ["transform-runtime"],
+  "presets": [
+    ["@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "last 2 versions, > 1%, ie >= 6, Chrome >= 29, Firefox >= 55, Safari >= 9, Android >= 4, iOS >= 9, and_uc > 11",
+          "node": "6"
+        },
+        "loose": false
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-runtime", {
+      "helpers": false,
+      "regenerator": false
+    }]
+  ],
   "env": {
     "test": {
-      "presets": [["env"], "stage-2", "flow"]
+      "plugins": [
+        "istanbul"
+      ]
     }
   }
 }

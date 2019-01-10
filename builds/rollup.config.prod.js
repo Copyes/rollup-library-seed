@@ -1,9 +1,15 @@
-import filesize from 'rollup-plugin-filesize'
+// import filesize from 'rollup-plugin-filesize'
 import uglify from 'rollup-plugin-uglify'
-import { minify } from 'uglify-es'
+import {
+  minify
+} from 'uglify-es'
 
 import baseConfig from './rollup.config.base'
-import { name, version, author } from '../package.json'
+import {
+  name,
+  version,
+  author
+} from '../package.json'
 
 const banner =
   `${'/*!\n' + ' * '}${name}.js v${version}\n` +
@@ -11,11 +17,9 @@ const banner =
   ` * Released under the MIT License.\n` +
   ` */`
 
-export default [
-  {
+export default [{
     input: baseConfig.input,
-    output: [
-      {
+    output: [{
         file: `dist/${name}.js`,
         format: 'umd',
         name,
@@ -35,7 +39,7 @@ export default [
         banner
       }
     ],
-    plugins: [...baseConfig.plugins, filesize()]
+    plugins: [...baseConfig.plugins]
   },
   // .min.js
   {
@@ -51,15 +55,14 @@ export default [
     ],
     plugins: [
       ...baseConfig.plugins,
-      uglify(
-        {
+      uglify({
           compress: {
             drop_console: true
           }
         },
         minify
       ),
-      filesize()
+      // filesize()
     ]
   }
 ]
