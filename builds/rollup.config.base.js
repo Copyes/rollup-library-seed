@@ -6,7 +6,7 @@ import replace from 'rollup-plugin-replace'
 import eslint from 'rollup-plugin-eslint'
 
 export default {
-  input: 'src/main.js',
+  input: 'src/index.js',
   plugins: [
     alias({
       resolve: ['.js']

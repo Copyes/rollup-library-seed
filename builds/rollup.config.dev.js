@@ -1,11 +1,12 @@
 import serve from 'rollup-plugin-serve'
 import baseConfig from './rollup.config.base'
-import { name } from '../package.json'
+import {
+  name
+} from '../package.json'
 
 export default {
   input: baseConfig.input,
-  output: [
-    {
+  output: [{
       file: `dist/${name}.js`,
       format: 'umd',
       name,
@@ -22,7 +23,7 @@ export default {
     ...baseConfig.plugins,
     serve({
       port: 9090,
-      contentBase: ['']
+      contentBase: ['example/']
     })
   ]
 }

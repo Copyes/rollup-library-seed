@@ -25,11 +25,11 @@
     return -1;
   }
 
-  var main = {
+  var index = {
     foo: foo
   };
 
-  return main;
+  return index;
 
 }));
 //# sourceMappingURL=rollup-library-seed.js.map

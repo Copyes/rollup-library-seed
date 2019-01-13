@@ -21,8 +21,8 @@ function foo(x) {
   return -1;
 }
 
-var main = {
+var index = {
   foo: foo
 };
 
-module.exports = main;
+module.exports = index;

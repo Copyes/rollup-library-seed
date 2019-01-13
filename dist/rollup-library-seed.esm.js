@@ -19,8 +19,8 @@ function foo(x) {
   return -1;
 }
 
-var main = {
+var index = {
   foo: foo
 };
 
-export default main;
+export default index;
