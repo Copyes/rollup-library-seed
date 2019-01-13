@@ -6,13 +6,14 @@ A real comfortable toolkit for building library. This toolkit is based on rollup
 
 ### Features
 
-* [x] 1、Checking the file which has been modified
-* [x] 2、Formatting the code style.
-* [x] 3、Formatting submission information.
-* [x] 4、Generating multiple specification files.
-* [x] 5、Running test and Testing your code.
-* [x] 6、Generating three versions respectively js.
-* [x] 7、Flow checking added.
+- [x] 1、Checking the file which has been modified
+- [x] 2、Formatting the code style.
+- [x] 3、Formatting submission information.
+- [x] 4、Generating multiple specification files.
+- [x] 5、Running test and Testing your code.
+- [x] 6、Generating three versions respectively js.
+- [x] 7、Flow checking added.
+- [x] 8、Support the local server
 
 ### Usage
 

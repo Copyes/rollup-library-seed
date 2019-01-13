@@ -1,2 +1,7 @@
 node_modules
 .history
+.nyc_output
+coverage
+dist
+*.d.ts
+!index.d.ts

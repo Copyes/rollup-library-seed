@@ -3,8 +3,10 @@ node_js:
   - '8' # 你想在哪个版本的node下运行你的代码？这里是node 8
 install: # 安装依赖环境
   - npm install
-script: # 你要执行的脚本，构建当然是npm run build啦 
+script: # 你要执行的脚本，构建当然是npm run build啦
   - npm run build
 branches: #构建哪些分支？master
   only:
     - master
+after_success: #添加测试覆盖率相关
+  - npm run coveralls

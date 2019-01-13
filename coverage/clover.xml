@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1526611582165" clover="3.2.0">
-  <project timestamp="1526611582165" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="7" coveredelements="7" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1">
-      <file name="maths.js" path="/Applications/github/rollup-library-seed/src/maths.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="14" count="1" type="stmt"/>
-      </file>
+<coverage generated="1547360276461" clover="3.2.0">
+  <project timestamp="1547360276461" name="All files">
+    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0">
     </metrics>
   </project>
 </coverage>
