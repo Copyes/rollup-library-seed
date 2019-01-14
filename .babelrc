@@ -11,10 +11,13 @@
     ]
   ],
   "plugins": [
-    ["@babel/plugin-transform-runtime", {
-      "helpers": false,
-      "regenerator": false
-    }]
+    ["@babel/plugin-transform-runtime",
+      {
+        "helpers": false,
+        "regenerator": false
+      }
+    ],
+    "@babel/plugin-proposal-class-properties"
   ],
   "env": {
     "test": {

@@ -1,17 +1,18 @@
 /* @flow */
-import { cube } from './maths'
-// 只使用了 cube, 所以 maths 中的 square 会被 tree shaking 移除掉
-function foo(x) {
-  if (x) {
-    return cube(x)
+import Test from './test'
+
+class Foo {
+  person = {
+    name: 'xunzhi'
   }
-  return -1
+  getTest() {
+    const test = new Test()
+    console.log(test.getName())
+  }
+
+  setAge() {
+    this.person.sex = 'boy'
+  }
 }
 
-if (process.env.NODE_ENV !== 'production') {
-  console.log('-----')
-}
-
-export default {
-  foo
-}
+export default Foo
