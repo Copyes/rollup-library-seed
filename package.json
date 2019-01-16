@@ -15,7 +15,7 @@
     "build": "yarn run clean && cross-env NODE_ENV=production rollup -c ./builds/rollup.config.prod.js",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "test": "npm run lint && nyc mocha",
-    "release": "npn test && npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+    "release": "npm run test && npm run build && git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
   "husky": {
     "hooks": {

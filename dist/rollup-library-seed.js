@@ -5,10 +5,9 @@
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-    typeof define === 'function' && define.amd ? define(factory) :
-    (global = global || self, global['rollup-library-seed'] = factory());
-}(this, function () {
-  'use strict';
+  typeof define === 'function' && define.amd ? define(factory) :
+  (global = global || self, global['rollup-library-seed'] = factory());
+}(this, function () { 'use strict';
 
   function _classCallCheck(instance, Constructor) {
     if (!(instance instanceof Constructor)) {
@@ -48,52 +47,52 @@
   }
 
   var Test =
-    /*#__PURE__*/
-    function () {
-      function Test() {
-        _classCallCheck(this, Test);
+  /*#__PURE__*/
+  function () {
+    function Test() {
+      _classCallCheck(this, Test);
 
-        _defineProperty(this, "state", {
-          name: 'xunzhi'
-        });
+      _defineProperty(this, "state", {
+        name: 'xunzhi'
+      });
+    }
+
+    _createClass(Test, [{
+      key: "getName",
+      value: function getName() {
+        console.log(this.state.name);
       }
+    }]);
 
-      _createClass(Test, [{
-        key: "getName",
-        value: function getName() {
-          console.log(this.state.name);
-        }
-      }]);
-
-      return Test;
-    }();
+    return Test;
+  }();
 
   var Foo =
-    /*#__PURE__*/
-    function () {
-      function Foo() {
-        _classCallCheck(this, Foo);
+  /*#__PURE__*/
+  function () {
+    function Foo() {
+      _classCallCheck(this, Foo);
 
-        _defineProperty(this, "person", {
-          name: 'xunzhi'
-        });
+      _defineProperty(this, "person", {
+        name: 'xunzhi'
+      });
+    }
+
+    _createClass(Foo, [{
+      key: "getTest",
+      value: function getTest() {
+        var test = new Test();
+        console.log(test.getName());
       }
+    }, {
+      key: "setAge",
+      value: function setAge() {
+        this.person.sex = 'boy';
+      }
+    }]);
 
-      _createClass(Foo, [{
-        key: "getTest",
-        value: function getTest() {
-          var test = new Test();
-          console.log(test.getName());
-        }
-      }, {
-        key: "setAge",
-        value: function setAge() {
-          this.person.sex = 'boy';
-        }
-      }]);
-
-      return Foo;
-    }();
+    return Foo;
+  }();
 
   return Foo;
 
